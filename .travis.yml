@@ -1,8 +1,11 @@
 language: node_js
-
 node_js:
   - "12"
-
 script:
   - npm test
   - npm run build
+deploy:
+  provider: heroku
+  app: react-tdd-cicd
+  api_key:
+    secure: ohXPAnzcr+339PlHIORZt+obmU6/sN8SmQGFN8SgYG2SbwcJ3NYjohjui0Pis/7eO3k6GXNPey2klacLvangY7h4o10rNIuMAL6zs4vZhTtqf25fY4K4Px6vFK/ZuOEJtYpQn5iRYdhxiP2pDgRa1qxE+9huDg4BO8yaNfeJGEx13csQ7NDlnW5oaNTYnRzSru1VCXXUa4RTXBN1f5CMf6xLRPMNSlbUDQcpJiRf413ZeefVSJhuk+ZpxSO9MWeaJHudsXie8OIiIy3OXuymI7aZgNLU2aPwoJ9SPHj7DCmOiwgc+oNnIhr+rxmlXf5UvvG/rwBDcygwfI2+bMAYAd92I48Eq5zvacQDdaGVF3Sh123f6RnqNwgGOE3KddzmMdCGqifnQz40J8+3TbbPKWFS34fk2q9nU0QTbYuQFDNleRPxqCOKJQMfVcRdVbzHcCr1tg7l0sf1PYS2pTnkmw3Srtp9h/pKKkf4TDmt3n3/oS5N50LyJnUsFUZlS6OgksU4ee0rVmTmd0Z+1Dh+tCTs2Xu6zQNIEeCFU1GfkWSGqBdTb1CKt70VP/wA7ycuDiRY8/M9y6X9IuBngd/9TwuYEG5fOBBoQOYDmhZnWSSfg+2W/oBBsrrCYH8LXha8hrWI0UvLuOUmp3FpC/c/qsjiZchh1iPIAnw77yP7x+0=
